@@ -101,26 +101,29 @@ let obj2 =new Object;
     if(arr[x].yearsOfExperience > 1){
     
 
-        // if(arr[x].firstName != null && arr[x].lastName != null ){
+        // if(arr[x].firstName != null || arr[x].lastName != null ){
            
-        //     obj2.fullName = arr[x].firstName +" "+arr[x].lastName;
            
-        //      }else if(  arr[x].firstName ==null){
-        //          obj2.fullName = arr[x].firstName;
-        //      }else if(arr[x].lastName ==null){
+           
+        //      }else 
+        if(  arr[x].firstName ==null){
+                 obj2.fullName = arr[x].lastName;
+             }else if(arr[x].lastName ==null){
     
-        //        obj2.fullName = arr[x].lastName;
-        //      }
+               obj2.fullName = arr[x].firstName;
+             }else{
+                obj2.fullName = arr[x].firstName +" "+arr[x].lastName;
+             }
 
    
-          if(arr[x].lastName !=null ){
+        //   if(arr[x].lastName !=null ){
            
-        obj2.fullName = arr[x].firstName +" "+ arr[x].lastName;
+        // obj2.fullName = arr[x].firstName +" "+ arr[x].lastName;
        
-        }else {
-            obj2.fullName = arr[x].firstName;
+        // }else {
+        //     obj2.fullName = arr[x].firstName;
 
-        }
+        // }
 
 
         obj2.tech = arr[x].tech;
