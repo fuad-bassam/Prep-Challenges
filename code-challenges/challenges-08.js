@@ -64,6 +64,8 @@ const getEntries = (obj) => {
  for(const x in k){
  arr.push(`${k[x][0]}: ${k[x][1]}`);
  }
+
+ 
  return arr;
 
 
