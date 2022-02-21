@@ -17,7 +17,8 @@
 // 
 
 function square(arr) {
-    // write your code here
+  
+        
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -56,7 +57,7 @@ function square(arr) {
 // Output: ['Adam Anderson', 'Ben Zeller', 'Peter Mccord', 'Fred Sagar', 'Nathan Weiss']
 
 function fullName(arr) {
-    // write your code here
+   
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -122,7 +123,7 @@ function fullName(arr) {
 // -------------
 
 function gradesAvg(arr) {
-    // write your code here
+  
 }
 // -------------------------------------------------------------------------------------------------------
 
