@@ -20,7 +20,7 @@ function square(arr) {
 
     const result = arr.map(val => val * val);
     return result;
-    
+
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -128,6 +128,8 @@ function fullName(arr) {
 // -------------
 
 function gradesAvg(arr) {
+  
+
     const result = arr.map(x => x.gradsList);
     for(let i=0;i<result.length;i++){
         let copy=result[i], num=0, avg=0, count=copy.length;

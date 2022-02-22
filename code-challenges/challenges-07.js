@@ -112,8 +112,10 @@ let obj2 =new Object;
     
                obj2.fullName = arr[x].firstName;
              }else{
+
                 obj2.fullName = arr[x].firstName +" "+arr[x].lastName;
-             }
+          
+            }
 
    
         //   if(arr[x].lastName !=null ){
