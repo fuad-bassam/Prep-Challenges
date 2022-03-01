@@ -132,7 +132,9 @@ function gradesAvg(arr) {
 
     const result = arr.map(x => x.gradsList);
     for(let i=0;i<result.length;i++){
+
         let copy=result[i], num=0, avg=0, count=copy.length;
+        
         for(let x=0;x<copy.length;x++){
             num+=copy[x];
             if(x==copy.length-1){
