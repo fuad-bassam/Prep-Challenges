@@ -43,28 +43,52 @@ const wordLength = (str) => {
 
 const wordLetters = (str1, str2) => {
 
-    var arr1 = str1.split("");
-    var arr2 = str2.split("");
+//     var arr1 = str1.split("");
+//     var arr2 = str2.split("");
+// var flag= true
 
+//     if (arr1.length != arr2.length) {
+//         return false;
+//     } else {
+//         arr1.forEach(x => {
 
-    if (arr1.length != arr2.length) {
-        return false;
-    } else {
-        arr1.forEach(x => {
-
-            if (arr2.indexOf(x) > -1) {
-                arr2.splice(arr2.indexOf(x), 1)
-            } else {
-                return false;
-            }
-
-            // if(arr2.indexOf(x) == -1){  return false}else{ arr2.splice(arr2.indexOf(x), 1)}
-
-        });
+//             if (arr2.indexOf(x) > -1) {
+//                 arr2.splice(arr2.indexOf(x), 1)
+//             } else {
+//                 flag= false;
+//                 return false
+//                 break;
+//             }
+//         });
    
-    }
+//     }
+// console.log();
+//     return flag;
 
-    return true;
+/////////////////////////////
+
+var arr1 = str1.split("");
+var arr2 = str2.split("");
+var flag= true
+
+if (arr1.length != arr2.length) {
+    return false;
+} else {
+
+   for (const x of arr1) {
+       
+        if (arr2.indexOf(x) > -1) {
+            arr2.splice(arr2.indexOf(x), 1)
+        } else {
+            flag= false;
+            break;
+        }
+   }
+    
+
+}
+console.log();
+return flag;
     
 }
 // -------------------------------------------------------------------------------------------------------
