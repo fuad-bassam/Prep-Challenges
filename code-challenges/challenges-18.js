@@ -43,53 +43,48 @@ const wordLength = (str) => {
 
 const wordLetters = (str1, str2) => {
 
-//     var arr1 = str1.split("");
-//     var arr2 = str2.split("");
-// var flag= true
+    //     var arr1 = str1.split("");
+    //     var arr2 = str2.split("");
+    // var flag= true
+    //     if (arr1.length != arr2.length) {
+    //         return false;
+    //     } else {
+    //         arr1.forEach(x => {
+    //             if (arr2.indexOf(x) > -1) {
+    //                 arr2.splice(arr2.indexOf(x), 1)
+    //             } else {
+    //                 flag= false;
+    //                 return false
+    //                 break;
+    //             }
+    //         });
+    //     }
+    // console.log();
+    //     return flag;
 
-//     if (arr1.length != arr2.length) {
-//         return false;
-//     } else {
-//         arr1.forEach(x => {
+    /////////////////////////////
 
-//             if (arr2.indexOf(x) > -1) {
-//                 arr2.splice(arr2.indexOf(x), 1)
-//             } else {
-//                 flag= false;
-//                 return false
-//                 break;
-//             }
-//         });
-   
-//     }
-// console.log();
-//     return flag;
+    var arr1 = str1.split("");
+    var arr2 = str2.split("");
+    var flag = true
 
-/////////////////////////////
+    if (arr1.length != arr2.length) {
+        return false;
+    } else {
 
-var arr1 = str1.split("");
-var arr2 = str2.split("");
-var flag= true
+        for (const x of arr1) {
 
-if (arr1.length != arr2.length) {
-    return false;
-} else {
-
-   for (const x of arr1) {
-       
-        if (arr2.indexOf(x) > -1) {
-            arr2.splice(arr2.indexOf(x), 1)
-        } else {
-            flag= false;
-            break;
+            if (arr2.indexOf(x) > -1) {
+                arr2.splice(arr2.indexOf(x), 1)
+            } else {
+                flag = false;
+                break;
+            }
         }
-   }
-    
+    }
+    console.log();
+    return flag;
 
-}
-console.log();
-return flag;
-    
 }
 // -------------------------------------------------------------------------------------------------------
 
